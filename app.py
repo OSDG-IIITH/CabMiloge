@@ -8,14 +8,13 @@ from functools import cmp_to_key
 
 key = Fernet.generate_key()
 
-BASE_URL = os.getenv('BASE_URL', 'http://localhost:5000')
+BASE_URL = os.getenv('BASE_URL', 'http://172.22.0.2:80')
 SUBPATH = os.getenv('SUBPATH', '')
 
 SECRET_KEY = os.getenv('SECRET_KEY',os.urandom(24))
 CAS_SERVER_URL = os.getenv('CAS_SERVER_URL', 'https://login.iiit.ac.in/cas/')
 SERVICE_URL = os.getenv('SERVICE_URL', f'{BASE_URL}{SUBPATH}/Get_Auth')
 REDIRECT_URL = os.getenv('REDIRECT_URL', f'{BASE_URL}{SUBPATH}/Get_Auth')
-
 
 app = Flask(__name__)
 app.secret_key = SECRET_KEY
@@ -29,7 +28,6 @@ cas_client = CASClient(
 # Database Setup
 conn = sqlite3.connect('sqllite_volume/cabmates.db')
 cursor = conn.cursor()
-
 cursor.execute('''
     CREATE TABLE IF NOT EXISTS Login (
         Fname TEXT,
@@ -98,7 +96,7 @@ def Get_Auth():
                         fernet = Fernet(key)
                         token = fernet.encrypt(uid.encode())
                         session['token'] = token
-                        return redirect(f'{SUBPATH}/index')
+                        return redirect(f'{SUBPATH}/upcomingTravels')
                     else:
                         message='User not found! Please Sign Up.'
                         return render_template('SignUp.html',roll=roll, email=email, first_name=first_name, last_name=last_name, uid=uid, message=message, subpath=SUBPATH)
@@ -144,7 +142,7 @@ def Get_userData():
             fernet = Fernet(key)
             token = fernet.encrypt(uid.encode())
             session['token'] = token
-            return redirect(f'{SUBPATH}/index')
+            return redirect(f'{SUBPATH}/upcomingTravels')
         except:
             print('Sign Up Failed')
             message='Sign Up Failed!'
@@ -453,6 +451,7 @@ def apply_filters():
             BookingEntries.append(entry)
                 
         filtered_data = {'available_options': BookingEntries}
+        
         return jsonify(filtered_data)
     
     except Exception as e:

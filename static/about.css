@@ -1,0 +1,96 @@
+
+.about {
+   /* background-color: rgba(177, 123, 248, 0.6); */
+   background-color:rgb(150, 131, 245,0.6);
+   min-height: 50vh;
+   width: 80%;
+   border: solid;
+   border-width: 0px;
+   margin-top: 10rem;
+   margin-left: 10%;
+   border-radius: 15px;
+   padding: 2rem;
+   /* Add padding for inner spacing */
+   box-sizing: border-box;
+   /* Ensure padding is included in width/height calculations */
+}
+
+.about h3 {
+   font-size: 2.5rem;
+   color: #333;
+   text-align: center;
+   /* Center-align the heading */
+   margin-top: 2;
+}
+
+.about hr {
+   width: 50%;
+   margin: 1rem auto;
+   /* Center the hr element */
+   border: 1px solid #333;
+}
+
+.about h4 {
+   font-size: 1.5rem;
+   color: #333;
+   margin-left: 12%;
+   margin-right: 12%;
+   margin-top: 5%;
+   text-align: center;
+}
+
+.about p{
+   font-size:larger;
+   color: #333;
+   text-align: justify;
+}
+
+.howTouse {
+   /* background-color: rgba(177, 123, 248, 0.6); */
+   background-color:rgb(150, 131, 245,0.6);
+
+   min-height: 50vh;
+   width: 80%;
+   border: solid;
+   border-width: 0px;
+   margin-top: 10rem;
+   margin-left: 10%;
+   border-radius: 15px;
+   padding: 2rem;
+   /* Add padding for inner spacing */
+   box-sizing: border-box;
+   /* Ensure padding is included in width/height calculations */
+}
+
+.howTouse h3 {
+   font-size: 2.5rem;
+   color: #333;
+   text-align: center;
+   /* Center-align the heading */
+   margin-top: 2;
+}
+
+.howTouse hr {
+   width: 50%;
+   margin: 1rem auto;
+   /* Center the hr element */
+   border: 1px solid #333;
+}
+
+.howTouse h4 {
+   font-size: 1.5rem;
+   color: #333;
+   margin-left: 12%;
+   margin-right: 12%;
+   margin-top: 5%;
+   text-align: center;
+}
+
+@media screen and (max-width:520px) {
+   .about h4{
+      font-size: 1.3rem;
+   }
+   .howTouse h4{
+      font-size: 1.3rem;
+   }
+}

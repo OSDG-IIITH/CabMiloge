@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="{{ subpath }}/static/style.css" />
+    <link rel="stylesheet" href="{{ subpath }}/static/bookingspage.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -68,320 +69,320 @@
     </div>
 
     <!-- NOW THE DROPDOWN STARTS -->
-    <div class="filter-div">
+    <div class="filter-div flex pos-r" >
         <!--THIS IS BATCH DROPDOWN-->
-        <div class="container_dropdown">
-          <div class="select-btn_batch" id="batch">
-            <span class="btn-text_batch">Select batch</span>
-            <span class="arrow-dwn">
+        <div class="container_dropdown pos-r">
+          <div class="select-btn_batch cursor-p box_shadow-black align-c z_1  bg-c1 flex" id="batch">
+            <span class="btn-text_batch  c-333 z_1 ">Select batch</span>
+            <span class="arrow-dwn align-c z_1 flex">
               <i class="fa-solid fa-chevron-down"></i>
             </span>
           </div>
 
-          <ul class="list-items">
-            <li class="item_batch">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+          <ul class="list-items box_shadow-black bg-c1">
+            <li class="item_batch cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_batch">UG1</span>
+              <span class="item-text_batch c-333 z_1 ">UG1</span>
             </li>
-            <li class="item_batch">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_batch cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_batch">UG2</span>
+              <span class="item-text_batch c-333 z_1 ">UG2</span>
             </li>
-            <li class="item_batch">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_batch cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_batch">UG3</span>
+              <span class="item-text_batch c-333 z_1 ">UG3</span>
             </li>
-            <li class="item_batch">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_batch cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_batch">UG4</span>
+              <span class="item-text_batch c-333 z_1 ">UG4</span>
             </li>
-            <li class="item_batch">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_batch cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_batch">UG5</span>
+              <span class="item-text_batch c-333 z_1 ">UG5</span>
             </li>
-            <li class="item_batch">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_batch cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_batch">PG1</span>
+              <span class="item-text_batch c-333 z_1 ">PG1</span>
             </li>
-            <li class="item_batch">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_batch cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_batch">PG2</span>
+              <span class="item-text_batch c-333 z_1 ">PG2</span>
             </li>
-            <li class="item_batch">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_batch cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_batch">PhD</span>
+              <span class="item-text_batch c-333 z_1 ">PHD</span>
             </li>
           </ul>
         </div>
 
         <!--THIS IS DESTINATION DROPDOWN-->
-        <div class="container_dropdown">
-          <div class="select-btn_destination" id="destination">
-            <span class="btn-text_destination">Select Destination</span>
-            <span class="arrow-dwn">
+        <div class="container_dropdown pos-r">
+          <div class="select-btn_destination cursor-p box_shadow-black align-c z_1 bg-c1" id="destination">
+            <span class="btn-text_destination c-333 z_1 ">Select Destination</span>
+            <span class="arrow-dwn align-c z_1 flex">
               <i class="fa-solid fa-chevron-down"></i>
             </span>
           </div>
 
-          <ul class="list-items">
-            <li class="item_destination">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+          <ul class="list-items box_shadow-black bg-c1">
+            <li class="item_destination cursor-p align-c z_1 item_dropdown flex ">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_destination">IIIT Campus</span>
+              <span class="item-text_destination c-333 z_1 ">IIIT Campus</span>
             </li>
-            <li class="item_destination">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_destination cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_destination"
+              <span class="item-text_destination c-333 z_1 "
                 >Rajiv Gandhi International Airport</span
               >
             </li>
-            <li class="item_destination">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_destination cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_destination">Secunderabad Junction</span>
+              <span class="item-text_destination c-333 z_1 ">Secunderabad Junction</span>
             </li>
-            <li class="item_destination">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_destination cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_destination">Kacheguda Railway Station</span>
+              <span class="item-text_destination c-333 z_1 ">Kacheguda Railway Station</span>
             </li>
           </ul>
         </div>
 
         <!--THIS IS STARTING POINT DROPDOWN-->
-        <div class="container_dropdown">
-          <div class="select-btn_start" id="start">
-            <span class="btn-text_start">Select Starting Point</span>
-            <span class="arrow-dwn">
+        <div class="container_dropdown pos-r">
+          <div class="select-btn_start cursor-p box_shadow-black align-c z_1  bg-c1" id="start">
+            <span class="btn-text_start c-333 z_1 ">Select Starting Point</span>
+            <span class="arrow-dwn align-c z_1 flex">
               <i class="fa-solid fa-chevron-down"></i>
             </span>
           </div>
 
-          <ul class="list-items">
-            <li class="item_start">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+          <ul class="list-items box_shadow-black bg-c1">
+            <li class="item_start cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_start">IIIT Campus</span>
+              <span class="item-text_start c-333 z_1 ">IIIT Campus</span>
             </li>
-            <li class="item_start">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_start cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_start"
+              <span class="item-text_start c-333 z_1 "
                 >Rajiv Gandhi International Airport</span
               >
             </li>
-            <li class="item_start">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_start cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_start">Secunderabad Junction</span>
+              <span class="item-text_start c-333 z_1 ">Secunderabad Junction</span>
             </li>
-            <li class="item_start">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_start cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_start">Kacheguda Railway Station</span>
+              <span class="item-text_start c-333 z_1 ">Kacheguda Railway Station</span>
             </li>
           </ul>
         </div>
 
         <!--THIS IS TIME DROPDOWN-->
-        <div class="container_dropdown">
-          <div class="select-btn_time" id="time">
-            <span class="btn-text_time">Select Time</span>
-            <span class="arrow-dwn">
+        <div class="container_dropdown pos-r">
+          <div class="select-btn_time cursor-p box_shadow-black align-c z_1 bg-c1" id="time">
+            <span class="btn-text_time  c-333 z_1 ">Select Time</span>
+            <span class="arrow-dwn align-c z_1 flex">
               <i class="fa-solid fa-chevron-down"></i>
             </span>
           </div>
 
-          <ul class="list-items">
-            <li class="item_time">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+          <ul class="list-items box_shadow-black bg-c1">
+            <li class="item_time cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_time">0-1</span>
+              <span class="item-text_time c-333 z_1 ">0-1</span>
             </li>
-            <li class="item_time">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_time cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_time">1-2</span>
+              <span class="item-text_time c-333 z_1 ">1-2</span>
             </li>
-            <li class="item_time">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_time cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_time">2-3</span>
+              <span class="item-text_time c-333 z_1 ">2-3</span>
             </li>
-            <li class="item_time">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_time cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_time">3-4</span>
+              <span class="item-text_time c-333 z_1 ">3-4</span>
             </li>
-            <li class="item_time">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_time cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_time">4-5</span>
+              <span class="item-text_time c-333 z_1 ">4-5</span>
             </li>
-            <li class="item_time">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_time cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_time">5-6</span>
+              <span class="item-text_time c-333 z_1 ">5-6</span>
             </li>
-            <li class="item_time">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_time cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_time">6-7</span>
+              <span class="item-text_time c-333 z_1 ">6-7</span>
             </li>
-            <li class="item_time">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_time cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_time">7-8</span>
+              <span class="item-text_time c-333 z_1 ">7-8</span>
             </li>
-            <li class="item_time">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_time cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_time">8-9</span>
+              <span class="item-text_time c-333 z_1 ">8-9</span>
             </li>
-            <li class="item_time">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_time cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_time">9-10</span>
+              <span class="item-text_time c-333 z_1 ">9-10</span>
             </li>
-            <li class="item_time">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_time cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_time">10-11</span>
+              <span class="item-text_time c-333 z_1 ">10-11</span>
             </li>
-            <li class="item_time">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_time cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_time">11-12</span>
+              <span class="item-text_time c-333 z_1 ">11-12</span>
             </li>
-            <li class="item_time">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_time cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_time">12-13</span>
+              <span class="item-text_time c-333 z_1 ">12-13</span>
             </li>
-            <li class="item_time">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_time cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_time">13-14</span>
+              <span class="item-text_time c-333 z_1 ">13-14</span>
             </li>
-            <li class="item_time">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_time cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_time">14-15</span>
+              <span class="item-text_time c-333 z_1 ">14-15</span>
             </li>
-            <li class="item_time">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_time cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_time">15-16</span>
+              <span class="item-text_time c-333 z_1 ">15-16</span>
             </li>
-            <li class="item_time">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_time cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_time">16-17</span>
+              <span class="item-text_time c-333 z_1 ">16-17</span>
             </li>
-            <li class="item_time">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_time cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_time">17-18</span>
+              <span class="item-text_time c-333 z_1 ">17-18</span>
             </li>
-            <li class="item_time">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_time cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_time">18-19</span>
+              <span class="item-text_time c-333 z_1 ">18-19</span>
             </li>
-            <li class="item_time">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_time cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_time">19-20</span>
+              <span class="item-text_time c-333 z_1 ">19-20</span>
             </li>
-            <li class="item_time">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_time cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_time">20-21</span>
+              <span class="item-text_time c-333 z_1 ">20-21</span>
             </li>
-            <li class="item_time">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_time cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_time">21-22</span>
+              <span class="item-text_time c-333 z_1 ">21-22</span>
             </li>
-            <li class="item_time">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_time cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_time">22-23</span>
+              <span class="item-text_time c-333 z_1 ">22-23</span>
             </li>
-            <li class="item_time">
-              <span class="checkbox">
-                <i class="fa-solid fa-check check-icon"></i>
+            <li class="item_time cursor-p align-c z_1 item_dropdown flex">
+              <span class="checkbox align-c flex z_1">
+                <i class="fa-solid fa-check  check-icon z_1"></i>
               </span>
-              <span class="item-text_time">23-0</span>
+              <span class="item-text_time c-333 z_1 ">23-0</span>
             </li>
           </ul>
         </div>
 
-        <div class="container_dropdown">
-          <input type="date" class="date_filter" id="selectedDate"></input>
+        <div class="container_dropdown pos-r">
+          <input type="date" class="date_filter flex align-c z_1 bg-c1 box_shadow-black" id="selectedDate"></input>
         </div> 
         <!-- CODE OF DROPDOWN ENDS HERE -->
 
-        <button type="submit" onclick="" class="submit_button">
+        <button type="submit" onclick="" class="submit_button cursor-p c-333 z_1 bg-c1 pos-r box_shadow-black">
           Apply Filters
         </button>
-        <button type="submit" onclick="clear_filter()" class="clear_button">
+        <button type="submit" onclick="clear_filter()" class="clear_button cursor-p c-333 z_1 bg-c1 poz-r box_shadow-black">
           Clear Filters
         </button>
 
     </div>
 
-    <div class="booking-container">
+    <div class="booking-container flex align-c">
       {% for entry in available_options %}
-      <div class="booking-card">
+      <div class="booking-card flex align-c">
           <div class="booking-card-content-left">
             <h3>Name: {{entry[3]}}</h3>
             <p>Batch: {{entry[5]}}</p>
@@ -395,8 +396,8 @@
             <p>Time: {{entry[1]}}</p>
             <p>Date: {{entry[0]}}</p>
             <button
-              class="mail_btn"
-              onclick="sendEmail('{{ entry[8] }}', '{{ entry[6] }}', '{{ entry[1] }}', '{{entry[0]}}', '{{entry[3]}}')"
+              class="mail_btn cursor-p"
+              onclick="sendEmail('{{ entry[8] }}', '{{ entry[6] }}', '{{ entry[1] }}', '{{entry[0]}}', '{{entry[3]}}','{{ fname }}')"
             >
               Send Email
             </button>

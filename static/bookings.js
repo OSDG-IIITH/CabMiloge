@@ -69,14 +69,12 @@ createDropdown("time", "item_time", "btn-text_time", selectedTimeOptions);
 createDropdown("start", "item_start", "btn-text_start", selectedStartOptions);
 
 
-function sendEmail(email, destination, time, date, name) {
+function sendEmail(email, destination, time, date, name, sender) {
   var subject = "Let's travel together!";
-  var body = "Hey there,\n\nI'm reaching out because I'm planning a trip to " + destination + " on " + date + " at " + time + ". Since we're both headed in the same direction, I thought it might be convenient for us to travel together.\n\nIf you're interested and have space available in your cab, it would be great to share the ride and split the travel expenses.\n\nLooking forward to hearing from you soon!\n\nBest regards,\n" + name;
+  var body = "Hey there,\n\nI'm reaching out because I'm planning a trip to " + destination + " on " + date + " at " + time + ". Since we're both headed in the same direction, I thought it might be convenient for us to travel together.\n\nIf you're interested and have space available in your cab, it would be great to share the ride and split the travel expenses.\n\nLooking forward to hearing from you soon!\n\nBest regards,\n" + sender;
   var mailtoLink = "mailto:" + email + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
   window.location.href = mailtoLink;
 }
-
-
 
 
 const selectedDateInput = document.getElementById("selectedDate");
@@ -85,9 +83,6 @@ selectedDateInput.addEventListener("change", (event) => {
   selected_Date = event.target.value;
   console.log("Selected Date:", selected_Date);
 });
-
-
-
 
 
 document.querySelector(".submit_button").addEventListener("click", function () {
@@ -145,16 +140,14 @@ function updateBookingOptions(availableOptions) {
   const bookingContainer = document.querySelector(".booking-container");
   bookingContainer.innerHTML = ""; // Clear existing options
 
-
-
+  console.log(availableOptions)
   if (!availableOptions) {
     bookingContainer.innerHTML = '<span class="no_plan_msg">No one with the current specifications is heading in that direction.<br> Please add your own card so that others can find you!</span>'; // Clear existing options        
   }
   else {
     availableOptions.forEach(entry => {
       const card = `
-        <div class="booking-card">
-          <div class="booking-card-content">
+        <div class="booking-card flex align-c">
             <div class="booking-card-content-left">
               <h3>Name: ${entry[3]}</h3>
               <p>Batch: ${entry[5]}</p>
@@ -168,13 +161,12 @@ function updateBookingOptions(availableOptions) {
               <p>Date: ${entry[0]}</p>
               <!-- Add the button here -->
               <button
-                class="mail_btn"
+                class="mail_btn cursor-p"11:59:8
                 onclick="sendEmail('${entry[8]}', '${entry[6]}', '${entry[1]}', '${entry[0]}', '${entry[3]}')"
               >
                 Send Email
               </button>
             </div>
-          </div>
         </div>`;
 
       bookingContainer.insertAdjacentHTML('beforeend', card);

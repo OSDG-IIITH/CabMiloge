@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{{ subpath }}/static/style.css" />
+    <link rel="stylesheet" href="{{ subpath }}/static/login.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -19,121 +20,123 @@
   </head>
   <style>
     body {
-      font-family: "Montserrat", sans-serif;
+      font-family: 'Mukta', sans-serif;
       background-image: url("{{ subpath }}/static/login-background.svg");
       background-size: cover;
       background-repeat: no-repeat;
+      margin:0;
+      padding:0;
       color: #fff;
-    }
+   }
 
-    .container {
-        height: 80vh;
+   .container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    flex-direction: column;
+    }
+    
+    h1 {
+        font-weight: 900;
+    }
+    
+    .message-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .message-box p {
+        font-size: 15px;
+        color: red;
+    }
+    
+    .box {
+        width: 20%;
+        height: 30vh;
+        min-width: 300px;
+        font-size: 1rem;
+        padding: 2rem;
+        background-color: rgba(0, 0, 0, 0.55);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        border-radius: 30px;
+        margin-top: 10vh;
+    }
+    
+    .box h1 {
+        text-align: center;
+    }
+    .user {
+        margin-top: 4rem;
+    }
+    
+    .fas {
+        position: absolute;
+    }
+    
+    input {
+        width: 90%;
+        margin-bottom: 25px;
+        padding: 0 1rem 0.5px;
+        font-size: 1rem;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.55);
+        outline: none;
+        background-color: rgba(0, 0, 0, 0);
+        color: #fff;
+    }
+    
+    input:focus {
+        border-bottom: 1px solid #eeeeee;
+    }
+    
+    .reset-password {
+        color: #ff7f50;
+        text-align: right;
+        margin-top: 0px;
+        font-size: 12px;
+    }
+    
+    .login-btn {
+        margin-top: 2rem;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 16px;
         flex-direction: column;
     }
-
-    h1 {
-      font-weight: 900;
-    }
-
-    .message-box {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-
-    .message-box p {
-      font-size: 15px;
-      color: red;
-    }
-
-    .box {
-      width: 15vh;
-      height: 40vh;
-      min-width: 300px;
-      font-size: 1rem;
-      padding: 2rem;
-      background-color: rgba(0, 0, 0, 0.55);
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
-      border-radius: 30px;
-      margin-top: 10vh;
-    }
-
-    .box h1 {
-      text-align: center;
-    }
-    .user {
-      margin-top: 4rem;
-    }
-
-    .fas {
-      position: absolute;
-    }
-
-    input {
-      width: 90%;
-      margin-bottom: 25px;
-      padding: 0 1rem 0.5px;
-      font-size: 1rem;
-      border: none;
-      border-bottom: 1px solid rgba(255, 255, 255, 0.55);
-      outline: none;
-      background-color: rgba(0, 0, 0, 0);
-      color: #fff;
-    }
-
-    input:focus {
-      border-bottom: 1px solid #eeeeee;
-    }
-
-    .reset-password {
-      color: #ff7f50;
-      text-align: right;
-      margin-top: 0px;
-      font-size: 12px;
-    }
-
-    .login-btn {
-      margin-top: 2rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      flex-direction: column;
-    }
-
+    
     .btn {
-      display: block;
-      width: 80%;
-      padding: 15px;
-      background-color: #eeeeee;
-      color: #2e1903;
-      border: none;
-      border-radius: 20px;
-      font-size: 20px;
-      font-weight: 600;
-      opacity: 0.8;
-      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        display: block;
+        width: 80%;
+        padding: 15px;
+        background-color: #eeeeee;
+        color: #2e1903;
+        border: none;
+        border-radius: 20px;
+        font-size: 20px;
+        font-weight: 600;
+        opacity: 0.8;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
     }
-
+    
     .btn:hover {
-      background-color: #d3cfeb;
+        background-color: #d3cfeb;
     }
-
+    
     .signup span {
-      color: #7fb8e6;
+        color: #7fb8e6;
     }
-
+    
     .signup span::hover {
-      color: #216ca9;
+        color: #216ca9;
     }
-
+    
     a {
-      text-decoration: none;
+        text-decoration: none;
     }
   </style>
   <body>
@@ -142,10 +145,8 @@
         <div class="logo unselectable">
           <img src="{{ subpath }}/static/logo.svg" alt="logo" />
         </div>
-        <div class="user-info">
-          <div class="profile-dropdown"></div>
-        </div>
       </header>
+
     </div>
     <div class="container">
       <div class="box">

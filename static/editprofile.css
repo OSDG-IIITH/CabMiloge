@@ -1,0 +1,231 @@
+.form-container {
+   display: flex;
+   flex-direction: column;
+   text-align: center;
+   min-height: 80vh;
+   width: 100%;
+   margin-top: 10vh;
+}
+
+.container-top {
+   align-items: center;
+   margin-top: 7%;
+   width: 100%;
+   min-height: 40vh;
+}
+
+.container-top div {
+   text-align: left;
+   background-color: rgb(212, 207, 240);
+   /* background-color: #a696f9ff; */
+   min-height: 33.2vh;
+   min-width: 50%;
+   float: left;
+   margin-left: 25%;
+}
+
+.container-top p {
+   border-top: 1px solid rgb(75, 72, 72);
+   padding: 8px;
+   height: 2.5rem;
+   font-size: 1.1rem;
+   margin: 0px;
+   display: block;
+   color: rgb(63, 58, 58);
+   transition: 0.3s;
+}
+
+.container-top h2 {
+   margin-top: 2rem;
+   font-size: 1.5rem;
+   margin-left: 2rem;
+}
+
+
+
+.container-top p:hover {
+   background-color: #c5c2d1;
+}
+
+.container-bottom {
+   margin-top: 1rem;
+   width: 100%;
+   min-height: 40vh;
+}
+
+.label-edit {
+   font-size: 1rem;
+   margin-left: 2rem;
+}
+
+.user-details {
+   margin-left: 5rem;
+}
+
+.box-edit {
+   text-align: left;
+   background-color: rgb(212, 207, 240);
+   min-height: 33.2vh;
+   min-width: 50%;
+   float: left;
+   margin-left: 25%;
+   display: flex;
+   flex-direction: column;
+}
+
+.box-edit h2 {
+   margin-top: 2rem;
+   font-size: 1.5rem;
+   margin-left: 2rem;
+}
+
+.box-edit .user-edit {
+   width: 100%;
+}
+
+.input-div {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 2%;
+   width: 50%;
+   /* Each input-div will take up 50% of the container */
+   height: 5vh;
+   box-sizing: border-box;
+}
+
+.input-div i {
+   margin-left: 2.3rem;
+   font-size: 1.5rem;
+}
+
+.input-div select {
+   appearance: none;
+   height: 2.3rem;
+   margin-left: 2rem;
+   font-size: 1.2rem;
+   flex-grow: 1;
+   padding: 0 1rem;
+   background-color: #fff;
+   cursor: pointer;
+}
+
+.input-div select:focus {
+   border-color: rgba(76, 105, 220, 0.8);
+   outline: none;
+}
+
+.input-div select:hover {
+   border-color: rgba(76, 105, 220, 0.8);
+}
+
+.input-div select option {
+   font-size: 1.2rem;
+   padding: 0.5rem;
+}
+
+.input-div select option:hover {
+   background-color: #c5c2d1;
+}
+
+.input-div input[type="text"] {
+   min-width: 140px;
+   height: 2.3rem;
+   margin-left: 2rem;
+   font-size: 1.2rem;
+   flex-grow: 1;
+   padding: 0 1rem;
+   background-color: #fff;
+   cursor: text;
+}
+
+.input-div input[type="text"]:focus {
+   border-color: rgba(76, 105, 220, 0.8);
+   outline: none;
+}
+
+.input-div input[type="text"]:hover {
+   border-color: rgba(76, 105, 220, 0.8);
+}
+
+.update-btn {
+   margin-top: 2rem;
+   margin-bottom: 2rem;
+   display: flex;
+   margin-left: 6rem;
+}
+
+.update-btn button {
+   padding: 1rem 3rem;
+   font-size: 1rem;
+   border: none;
+   border-radius: 4px;
+   cursor: pointer;
+   background-color: #333;
+   color: #fff;
+}
+
+.update-btn button a {
+   color: inherit;
+   text-decoration: none;
+}
+
+
+.bg-transparent{
+   background-color: transparent;
+}
+
+.border{
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   border: 1px solid rgba(75, 72, 72, 0.2);
+   border-radius: 8px;
+}
+
+
+@media (max-width: 1026px) {
+   .box-edit{
+      width: 512px;
+   }
+}
+
+@media (max-width: 768px) {
+   .container-top div {
+       margin-left: 0px;
+       width: 95%;
+   }
+
+   .container-top h2 {
+       margin-left: 0px;
+   }
+
+   .label-edit {
+       margin-left: 0px;
+   }
+
+   .user-details {
+       margin-left: 1rem;
+   }
+
+   .box-edit {
+       margin-left: 0px;
+       margin-top: 5rem;
+       padding: 1vh;
+       width: 95%;
+   }
+
+   .box-edit h2 {
+       margin-left: 0px;
+
+   }
+   .container-top{
+       min-width: none;
+   }
+   .container-top>div{
+       padding: 1vh;
+       min-width: none;
+   }
+
+   .input-div input[type="text"] {
+      min-width: 140px;
+   }
+}
